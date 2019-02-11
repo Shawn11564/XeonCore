@@ -1,0 +1,7 @@
+name: XeonCore
+version: ${project.version}
+main: dev.xeon.xeoncore.XeonCore
+prefix: XeonCore
+authors: [XeonDevelopment]
+description: Core API for all of Xeon Development's plugins
+website: https://xeon.dev
