@@ -8,7 +8,7 @@ public class IPHandlers {
 		return player.getAddress().getHostName();
 	}
 
-	public static boolean validIP (String ip) {
+	public boolean validIP (String ip) {
 		try {
 			if ( ip == null || ip.isEmpty() ) {
 				return false;

@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class FileHandlers {
 
-	public static void createCustomYML(String fileName, JavaPlugin plugin) {
+	public void createCustomYML(String fileName, JavaPlugin plugin) {
 		File newFile = new File(plugin.getDataFolder(),fileName + ".yml");
 		if (doesFileExist(newFile))
 			return;
@@ -25,11 +25,11 @@ public class FileHandlers {
 		}
 	}
 
-	public static boolean doesFileExist(File file) {
+	public boolean doesFileExist(File file) {
 		return file.exists();
 	}
 
-	public static void copyResourceContentsToFile(String resourceFrom, String fileTo, JavaPlugin plugin) {
+	public void copyResourceContentsToFile(String resourceFrom, String fileTo, JavaPlugin plugin) {
 		File customConfigFile = new File(plugin.getDataFolder(), fileTo + ".yml");
 		YamlConfiguration customConfig = YamlConfiguration.loadConfiguration(customConfigFile);
 

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="XenoCore">
-    <output-path>$PROJECT_DIR$/out/artifacts/XenoCore</output-path>
-    <root id="archive" name="XenoCore.jar">
-      <element id="module-output" name="XeonCore" />
-    </root>
-  </artifact>
-</component>

@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 
 public class PlayerHandlers {
 
-	public static Player getPlayerFromString(String target) {
+	public Player getPlayerFromString(String target) {
 		Player player;
 		if (isRealPlayer(target)) {
 			player = Bukkit.getPlayer(target);
@@ -16,7 +16,7 @@ public class PlayerHandlers {
 		return player;
 	}
 
-	public static boolean isRealPlayer(String name) {
+	public boolean isRealPlayer(String name) {
 		if (Bukkit.getPlayerExact(name) != null)
 			return true;
 		if (Bukkit.getPlayer(name) != null)
