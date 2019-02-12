@@ -4,9 +4,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class XeonCore extends JavaPlugin {
 
+	private static XeonCore instance;
+
 	@Override
 	public void onEnable() {
-		// Plugin startup logic
+		instance = this;
 
 	}
 
@@ -14,4 +16,9 @@ public final class XeonCore extends JavaPlugin {
 	public void onDisable() {
 		// Plugin shutdown logic
 	}
+
+	public static XeonCore getInstance() {
+		return instance;
+	}
+
 }
