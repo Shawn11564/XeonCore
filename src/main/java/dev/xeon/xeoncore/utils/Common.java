@@ -102,19 +102,16 @@ public class Common {
 				if(message.length() >= limit) {
 					if(text.charAt(i) == ' ') {
 						al.add(message);
-						al.add("------");
 						message = "";					
 					}
 					
 					if(check == text.length()) {
 						al.add(message);
-						al.add("------");
 					}
 					
 				} else {
 					if(check == text.length()) {
 						al.add(message);
-						al.add("------");
 					}
 				}
 			}	
